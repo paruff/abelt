@@ -1,0 +1,4 @@
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'sonarqube', '~> 0.3.2'
+
