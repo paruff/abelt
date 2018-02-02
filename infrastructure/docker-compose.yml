@@ -1,0 +1,22 @@
+#version: '2'
+#services:
+  git:
+    image: alipine/git
+  nexus:
+    image: sonatype/nexus:oss
+  jenkins:
+    image: jenkins:alpine
+  # sonarqube:
+  #   image: “sonarqube:lts-alpine”
+  # hygieia-ui:
+  #   image: “capitalone/hygieia-ui”
+  # hygieia-api:
+  #   image: “capitalone/hygieia-api”
+  # selenium:
+  #   image: “selenium/hub”
+  # elk:
+  #   image: “elastic:alpine”
+  # dns:
+  #   image: “”
+  # sendmail:
+  #   image: “”

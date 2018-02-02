@@ -10,8 +10,8 @@ config.vm.hostname = "wiki"
   config.berkshelf.enabled = true
 
   config.vm.provision "chef_solo" do |chef|
-#      chef.version = "12.21.31"
-         chef.add_recipe "chef"
+      chef.version = "12.21.31"
+         chef.add_recipe "confluence"
   end 
 
   config.vm.provision :serverspec do |spec|

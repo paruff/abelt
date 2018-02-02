@@ -1,0 +1,4 @@
+source "https://supermarket.chef.io"
+
+#metadata
+cookbook 'confluence', '~> 2.4.3'
