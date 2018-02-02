@@ -10,8 +10,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.enabled = true
 
   config.vm.provision "chef_solo" do |chef|
-#      chef.version = "12.21.31"
-         chef.add_recipe "elasticsearch"
+ chef.json = {
+      "java" => {
+        "jdk_version" => "8"
+      }
+   }
+       chef.add_recipe "ntp"
+       chef.add_recipe "java"
+       chef.add_recipe "elasticsearch"
+       chef.add_recipe "logstash"
+       chef.add_recipe "kibana5"
   end 
 
   config.vm.provision :serverspec do |spec|
