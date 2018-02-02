@@ -26,9 +26,9 @@ if ! which java ; then
  brew install java
 fi
 
-if  ! which ant ; then
-   brew install ant
-fi
+# if  ! which ant ; then
+#    brew install ant
+# fi
 
 if  ! which maven ; then
   brew install maven
@@ -38,9 +38,9 @@ if  ! which gradle ; then
   brew install gradle
 fi
 
-if  ! which grunt ; then
-  brew install grunt
-fi
+#if  ! which grunt ; then
+#  brew install grunt
+#fi
 
 
 if  ! which virtualbox ; then
@@ -51,8 +51,14 @@ if  ! which vagrant ; then
   brew install vagrant
 fi
 
+if ! which chef ; then
+  brew install chefdk
+if
+
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-serverspec
+
+
 
 if  ! which docker-machine ; then
   brew install docker-machine

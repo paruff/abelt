@@ -35,6 +35,7 @@ build/
 .rvmrc
 
 
-*/.vagrant/
-
+**/.vagrant
+**/rspec_html_reports
+Berksfile.lock
 /tmp/
